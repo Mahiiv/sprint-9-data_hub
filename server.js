@@ -3,7 +3,7 @@ var express = require("express");
 var app = express();
 
 // the port my server will listen on
-var PORT = 5000;
+var PORT = process.env.PORT || 5000;
 
 // this line lets express read json from req.body
 // has to be above my routes or req.body is undefined
